@@ -8,23 +8,20 @@
   </head>
   <body>
     <form action="" method="get">
-      <p>
-        <b>Имя:</b><br />
-        <input
-          type="text"
-          size="20"
-          name="Imya"
-          value="Введите имя"
-        /><br /><br />
-        <b>Фамилия:</b><br />
-        <input
-          type="text"
-          size="20"
-          name="Familiya"
-          value="Введите фамилию"
-        /><br />
-      </p>
+      <b>Имя:</b><br />
+      <input type="text" size="20" name="Imya" value="имя" /><br /><br />
+      <b>Фамилия:</b><br />
+      <input
+        type="text"
+        size="20"
+        name="Familiya"
+        value="фамилия"
+      /><br /><br />
+      <b>Пол:</b><br />
+      <input type="radio" name="Pol" value="Male" />М
+      <input type="radio" name="Pol" value="Female" />Ж
     </form>
+    <br />
     <form action="" method="post" enctype="multipart/form-data">
       <b>Загрузите свою фотографию:</b>
       <input type="file" name="photo" /><br /><br />
@@ -43,8 +40,105 @@
         <option value="5">Мурманск</option>
         <option value="6">Петропавловск-Камчатский</option>
         <option value="7">Самара</option>
-        <option value="8">Санкт-Петербург</option>
-      </select>
+        <option value="8">Санкт-Петербург</option> </select
+      ><br /><br />
+
+      <label
+        ><b>Расскажите о себе:</b><br />
+        <textarea rows="5" cols="30" name="OSebe">О себе...</textarea
+        ><br /><br />
+      </label>
+
+      <label
+        ><b>Любимые дисциплины(можно несколько):</b><br />
+        <div>
+          <input type="checkbox" name="discpln" value="disc1" />Программирование
+        </div>
+        <div>
+          <input type="checkbox" name="discpln" value="disc2" />Информатика
+        </div>
+        <div>
+          <input type="checkbox" name="discpln" value="disc3" />Информатика
+        </div>
+        <div>
+          <input type="checkbox" name="discpln" value="disc4" />Английский язык
+        </div>
+        <div>
+          <input type="checkbox" name="discpln" value="disc5" />Операционные
+          системы
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="discpln"
+            value="disc6"
+          />Web-программирование
+        </div>
+        <div>
+          <input type="checkbox" name="discpln" value="disc7" />Матанализ
+        </div> </label
+      ><br />
+
+      <label
+        ><b>Планируете поступать в магистратуру:</b><br />
+        <input type="radio" name="MagAns" value="Yes" />Да
+        <input type="radio" name="MagAns" value="No" />Нет
+        <input type="radio" name="MagAns" value="NeZnayu" />Не знаю(по
+        умолчанию) </label
+      ><br /><br />
+
+      <label
+        ><b>Что Вам нравится в Вашей профессии?</b><br />
+        <div>
+          <input type="checkbox" name="prof" value="Comps" />Люблю компы
+        </div>
+        <div>
+          <input type="checkbox" name="prof" value="MathPhys" />Обожаю матан и
+          физику
+        </div>
+        <div>
+          <input type="checkbox" name="prof" value="CASH" />Высокая зарплата
+        </div>
+        <div>
+          <input type="checkbox" name="prof" value="LoveProgs" />Программы
+          делают жизнь лучше
+        </div>
+        <div>
+          <input type="checkbox" name="prof" value="VeryComps" />Очень люблю
+          компы
+        </div> </label
+      ><br /><br />
+
+      <label
+        ><b>Предпочитаемые источники информации:</b><br />
+        <div>
+          <input type="checkbox" name="originsofinf" value="books" />Книги
+        </div>
+        <div>
+          <input type="checkbox" name="originsofinf" value="Habr" />Хабр
+        </div>
+        <div>
+          <input type="checkbox" name="originsofinf" value="Darknet" />Секретный
+          форум в даркнете
+        </div>
+        <div>
+          <input type="checkbox" name="originsofinf" value="YT" />Youtube
+        </div>
+        <div>
+          <input type="checkbox" name="originsofinf" value="AskSpec" />Спросить
+          у специалиста
+        </div>
+        <div>
+          <input type="checkbox" name="originsofinf" value="RAB" />У меня есть
+          специальнообученный раб, который делает всё за меня
+        </div>
+        <div>
+          <input type="checkbox" name="originsofinf" value="INGOD" />Я есть
+          ходячая энциклопедия
+        </div></label
+      ><br /><br />
+
+      <input type="submit" /> <input type="reset" />
     </form>
   </body>
 </html>
