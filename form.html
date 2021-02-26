@@ -7,9 +7,44 @@
     <title>Static Template</title>
   </head>
   <body>
-    <h1>
-      <a href="index.html">Ссылка на index.html</a><br />
-      <a href="https://github.com/klklklo/web-prog">Ссылка на github</a>
-    </h1>
+    <form action="" method="get">
+      <p>
+        <b>Имя:</b><br />
+        <input
+          type="text"
+          size="20"
+          name="Imya"
+          value="Введите имя"
+        /><br /><br />
+        <b>Фамилия:</b><br />
+        <input
+          type="text"
+          size="20"
+          name="Familiya"
+          value="Введите фамилию"
+        /><br />
+      </p>
+    </form>
+    <form action="" method="post" enctype="multipart/form-data">
+      <b>Загрузите свою фотографию:</b>
+      <input type="file" name="photo" /><br /><br />
+    </form>
+    <form>
+      <b>Введите пароль:</b><br />
+      <input type="password" name="Parol" /><br /><br />
+      <b>Подтвердите пароль:</b><br />
+      <input type="password" name="Povtor Parol" /><br /><br />
+      <b>Город(выбрать из списка):</b><br />
+      <select name="Gorod" required>
+        <option value="1">Владивосток</option>
+        <option value="2">Киров</option>
+        <option value="3">Магадан</option>
+        <option value="4">Москва</option>
+        <option value="5">Мурманск</option>
+        <option value="6">Петропавловск-Камчатский</option>
+        <option value="7">Самара</option>
+        <option value="8">Санкт-Петербург</option>
+      </select>
+    </form>
   </body>
 </html>
